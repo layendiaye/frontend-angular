@@ -1,0 +1,11 @@
+<div style="margin-left:40% ;">
+  <div style="font-size: 2em; font-weight: bold;">Annuaire</div>
+<div > 
+  <input type="text" [(ngModel)]="searchText"/>
+  <button (click)="handleSearch()">Chercher</button>
+  <button (click)="handleList()">Tout</button>
+  <div *ngFor="let entry of entries" >{{entry}}</div>
+</div>
+</div>
+
+
